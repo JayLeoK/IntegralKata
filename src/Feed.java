@@ -6,26 +6,26 @@ import java.util.HashMap;
 import java.util.HashSet;
 
 public class Feed {
-    private HashMap<String, HashSet<Integer>> handleIndexMap;
+    private HashMap<String, HashSet<Integer>> handleToIndex;
     private ArrayList<Post> posts;
-    private HashSet<Profile> profiles;
+    private HashMap<String, Profile> handleToProfile;
     private Date date;
 
     public Feed(String currTime){
-        handleIndexMap = new HashMap<String, HashSet<Integer>>();
+        handleToIndex = new HashMap<String, HashSet<Integer>>();
         posts = new ArrayList<Post>();
-        profiles = new HashSet<Profile>();
+        handleToProfile = new HashMap<String, Profile>();
         date = stringToDate(currTime);
     }
 
-    public int numProfiles() { return profiles.size(); }
+    public int numProfiles() { return handleToProfile.size(); }
 
     public int numPosts(){ return posts.size(); }
 
     public String timeFrom(String timeInput){
         Date dateInput = stringToDate(timeInput);
-        long diff = dateInput.getTime()-date.getTime();
-        if(diff>60000){
+        long diff = date.getTime()-dateInput.getTime();
+        if(diff>=60000){
             int minutes = (int)diff/60000;
             return minutes + " minutes ago";
         }else {
@@ -46,12 +46,22 @@ public class Feed {
 
     public void newProfile(String handle, String name){
         Profile newProf = new Profile(handle, name);
-        profiles.add(newProf);
+        handleToProfile.put(handle, newProf);
     }
 
     public void makePost(String handle, String body, String time){
         Post post = new Post(handle, body, time);
         posts.add(post);
+    }
+
+    public String viewTimeline(String handle1, String handle2){
+        return formatPost(posts.get(0));
+    }
+
+    private String formatPost(Post post){
+        Profile prof = handleToProfile.get(post.getHandle());
+        String timestamp = timeFrom(post.getTime());
+        return prof.getName() + ": " + post.getBody() + " ("+timestamp+")";
     }
 
 

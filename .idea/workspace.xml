@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb2c7999-35b6-4944-9289-7b70e54fdfcc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/domainRelationships" beforeDir="false" afterPath="$PROJECT_DIR$/domainRelationships" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Feed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Feed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Profile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/FeedTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/FeedTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/PostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/PostTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/ProfileTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ProfileTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,23 +36,25 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Feed.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="632">
-                  <caret line="52" column="48" selection-start-line="52" selection-start-column="48" selection-end-line="52" selection-end-column="48" />
+                <state relative-caret-position="213">
+                  <caret line="57" column="40" lean-forward="true" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="e#1742#1743#0" expanded="true" />
+                    <element signature="e#1771#1772#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Post.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+                <state relative-caret-position="306">
+                  <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
                   <folding>
                     <element signature="e#146#147#0" expanded="true" />
                     <element signature="e#173#174#0" expanded="true" />
@@ -95,7 +92,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tests/PostTest.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="153">
@@ -104,11 +101,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/tests/FeedTests.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="177">
-                  <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="50" />
+                <state relative-caret-position="180">
+                  <caret line="35" column="93" selection-start-line="35" selection-start-column="93" selection-end-line="35" selection-end-column="93" />
                 </state>
               </provider>
             </entry>
@@ -131,13 +128,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Feed.java" />
         <option value="$PROJECT_DIR$/domainRelationships" />
         <option value="$PROJECT_DIR$/src/Profile.java" />
         <option value="$PROJECT_DIR$/tests/ProfileTests.java" />
-        <option value="$PROJECT_DIR$/tests/FeedTests.java" />
         <option value="$PROJECT_DIR$/tests/PostTest.java" />
         <option value="$PROJECT_DIR$/src/Post.java" />
+        <option value="$PROJECT_DIR$/src/Feed.java" />
+        <option value="$PROJECT_DIR$/tests/FeedTests.java" />
       </list>
     </option>
   </component>
@@ -178,7 +175,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585688976654" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585690054108" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -205,7 +202,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProfileTests.testFollowing">
+  <component name="RunManager" selected="JUnit.FeedTests.testTimelineFeature">
     <configuration name="FeedTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IntegralKata" />
       <option name="PACKAGE_NAME" value="" />
@@ -224,18 +221,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PostTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FeedTests.testPublishingFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IntegralKata" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PostTest" />
+      <option name="MAIN_CLASS_NAME" value="FeedTests" />
+      <option name="METHOD_NAME" value="testPublishingFeature" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProfileTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FeedTests.testTimelineFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IntegralKata" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ProfileTests" />
+      <option name="MAIN_CLASS_NAME" value="FeedTests" />
+      <option name="METHOD_NAME" value="testTimelineFeature" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -252,11 +253,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ProfileTests.testFollowing" />
+        <item itemvalue="JUnit.FeedTests.testTimelineFeature" />
+        <item itemvalue="JUnit.FeedTests.testPublishingFeature" />
         <item itemvalue="JUnit.FeedTests.testBasicFeed" />
+        <item itemvalue="JUnit.ProfileTests.testFollowing" />
         <item itemvalue="JUnit.FeedTests" />
-        <item itemvalue="JUnit.PostTest" />
-        <item itemvalue="JUnit.ProfileTests" />
       </list>
     </recent_temporary>
   </component>
@@ -274,35 +275,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProfileTests - 2020.03.31 at 15h 52m 36s.xml">
-      <configuration name="ProfileTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PostTest - 2020.03.31 at 15h 52m 40s.xml">
-      <configuration name="PostTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FeedTests - 2020.03.31 at 15h 52m 43s.xml">
-      <configuration name="FeedTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FeedTests_testBasicFeed - 2020.03.31 at 16h 16m 11s.xml">
-      <configuration name="FeedTests.testBasicFeed" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FeedTests - 2020.03.31 at 16h 16m 14s.xml">
-      <configuration name="FeedTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FeedTests - 2020.03.31 at 16h 17m 37s.xml">
-      <configuration name="FeedTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FeedTests_testBasicFeed - 2020.03.31 at 16h 21m 01s.xml">
-      <configuration name="FeedTests.testBasicFeed" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FeedTests_testBasicFeed - 2020.03.31 at 16h 50m 49s.xml">
-      <configuration name="FeedTests.testBasicFeed" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FeedTests_testBasicFeed - 2020.03.31 at 16h 51m 38s.xml">
       <configuration name="FeedTests.testBasicFeed" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ProfileTests_testFollowing - 2020.03.31 at 17h 08m 13s.xml">
       <configuration name="ProfileTests.testFollowing" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FeedTests_testPublishingFeature - 2020.03.31 at 17h 19m 26s.xml">
+      <configuration name="FeedTests.testPublishingFeature" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FeedTests_testBasicFeed - 2020.03.31 at 17h 19m 59s.xml">
+      <configuration name="FeedTests.testBasicFeed" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FeedTests_testPublishingFeature - 2020.03.31 at 17h 20m 07s.xml">
+      <configuration name="FeedTests.testPublishingFeature" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FeedTests_testBasicFeed - 2020.03.31 at 17h 20m 41s.xml">
+      <configuration name="FeedTests.testBasicFeed" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FeedTests_testPublishingFeature - 2020.03.31 at 17h 20m 44s.xml">
+      <configuration name="FeedTests.testPublishingFeature" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FeedTests_testPublishingFeature - 2020.03.31 at 17h 20m 57s.xml">
+      <configuration name="FeedTests.testPublishingFeature" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FeedTests_testPublishingFeature - 2020.03.31 at 17h 21m 45s.xml">
+      <configuration name="FeedTests.testPublishingFeature" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FeedTests_testPublishingFeature - 2020.03.31 at 17h 21m 56s.xml">
+      <configuration name="FeedTests.testPublishingFeature" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -318,11 +319,11 @@
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="2" weight="0.32978722" />
+      <window_info active="true" anchor="bottom" id="Messages" order="2" visible="true" weight="0.32978722" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.2216312" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.2890071" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -338,30 +339,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/domainRelationships">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/FeedTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/ProfileTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Profile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -380,16 +357,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Feed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="52" column="48" selection-start-line="52" selection-start-column="48" selection-end-line="52" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/PostTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -397,10 +364,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/ProfileTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Post.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        <state relative-caret-position="306">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding>
             <element signature="e#146#147#0" expanded="true" />
             <element signature="e#173#174#0" expanded="true" />
@@ -409,6 +386,32 @@
             <element signature="e#393#394#0" expanded="true" />
             <element signature="e#420#421#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domainRelationships">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Feed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="57" column="40" lean-forward="true" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1742#1743#0" expanded="true" />
+            <element signature="e#1771#1772#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/FeedTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="35" column="93" selection-start-line="35" selection-start-column="93" selection-end-line="35" selection-end-column="93" />
         </state>
       </provider>
     </entry>
