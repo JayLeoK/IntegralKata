@@ -41,6 +41,8 @@ class FeedTests {
         feed.newProfile("alice123","Alice");
         feed.newProfile("bob_the_builder","Bob");
         feed.newProfile("xXcharlieXx","Charlie");
+        feed.followProfile("xXcharlieXx","alice123");
+        feed.followProfile("xXcharlieXx","bob_the_builder");
 
         String postTime = "2019-03-31 16:25:00.000";
         feed.makePost("alice123","I love the weather today.", postTime);
@@ -51,9 +53,9 @@ class FeedTests {
         String postTime4 = "2019-03-31 16:29:45.000";
         feed.makePost("xXcharlieXx","I'm in New York today! Anyone wants to have a coffee?",postTime4);
         assertEquals(feed.numPosts(),4);
-        assertEquals(feed.viewWall("xXCharlieXx"),
+        assertEquals(feed.viewWall("xXcharlieXx"),
                 "Charlie: I'm in New York today! Anyone wants to have a coffee? (15 seconds ago)\n" +
                         "Bob: Good game though. (1 minutes ago)\nBob: Darn! We lost! (2 minutes ago)\n" +
-                        "Alice: I love the weather today (5 minutes ago)");
+                        "Alice: I love the weather today. (5 minutes ago)");
 }
 }

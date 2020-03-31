@@ -56,6 +56,17 @@ public class Feed {
         handleToIndexList.get(handle).add(posts.size()-1);
     }
 
+    public void followProfile(String handle1, String handle2){
+        Profile profile1 = handleToProfile.get(handle1);
+        profile1.addFollowing(handle2);
+    }
+
+    private String formatPost(Post post){
+        Profile prof = handleToProfile.get(post.getHandle());
+        String timestamp = timeFrom(post.getTime());
+        return prof.getName() + ": " + post.getBody() + " ("+timestamp+")";
+    }
+
     public String viewTimeline(String handle1, String handle2){
         ArrayList<Integer> indexList = handleToIndexList.get(handle2);
         String output = "";
@@ -68,25 +79,25 @@ public class Feed {
         return output;
     }
 
-    public String viewWall(String handle){
+    public String viewWall(String profHandle){
+        Profile profile = handleToProfile.get(profHandle);
+        ArrayList<String> followingList = profile.getFollowing();
+
         ArrayList indices = new ArrayList<Integer>();
-        Profile prof = handleToProfile.get(handle)
-        for
-        ArrayList<Integer> indexList = handleToIndexList.get();
+        for(int i=0;i<followingList.size();i++){
+            String handle = followingList.get(i);
+            ArrayList<Integer> followingIndices = handleToIndexList.get(handle);
+            indices.addAll(followingIndices);
+        }
+        Collections.sort(indices);
         String output = "";
-        for (int i = indexList.size()-1;i>=0;i--){
+        for (int i = indices.size()-1;i>=0;i--){
             output += formatPost(posts.get(i));
             if(i>0){
                 output += "\n";
             }
         }
         return output;
-    }
-
-    private String formatPost(Post post){
-        Profile prof = handleToProfile.get(post.getHandle());
-        String timestamp = timeFrom(post.getTime());
-        return prof.getName() + ": " + post.getBody() + " ("+timestamp+")";
     }
 
 

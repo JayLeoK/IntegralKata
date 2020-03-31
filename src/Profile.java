@@ -9,6 +9,7 @@ public class Profile {
         this.handle = handle;
         this.name = name;
         this.following = new ArrayList<String>();
+        this.following.add(handle);
     }
 
     public String getHandle(){
