@@ -1,7 +1,8 @@
 public class Post {
+    private String handle;
     private String body;
 
-    public Post(String body){
+    public Post(String handle, String body){
         this.body = body;
     }
 

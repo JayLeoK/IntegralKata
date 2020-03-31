@@ -1,0 +1,21 @@
+To test what user sees, profile and post entities exist
+in the feed object. FeedTests.java tests all features
+specified by the kata.
+
+Profile
+- String handle ("alice123")
+- String name ("Alice")
+- ArrayList of following profile handles
+
+Post
+- String handle ("alice123")
+- String body ("I love the weather today.")
+- Timestamp
+
+Feed
+- HashSet of Profiles
+- ArrayList of Posts (ordered by timestamp)
+- HashMap of handles to ArrayList of indices,
+    each corresponding with posts
+
+TEST: Publishing, Timeline, and Following

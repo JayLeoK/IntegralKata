@@ -3,9 +3,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class PostTest {
-    private Post testPost = new Post("Test");
-    private Profile Alice = new Profile("Alice");
-
+    private Post testPost = new Post("TestHandle","Test");
 
     @Test
     void testBasicPost() {
