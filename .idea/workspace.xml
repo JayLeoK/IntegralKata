@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb2c7999-35b6-4944-9289-7b70e54fdfcc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Feed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Feed.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/FeedTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/FeedTests.java" afterDir="false" />
     </list>
@@ -39,12 +40,13 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Feed.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="213">
-                  <caret line="57" column="40" lean-forward="true" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
+                <state relative-caret-position="212">
+                  <caret line="70" column="30" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#1742#1743#0" expanded="true" />
-                    <element signature="e#1771#1772#0" expanded="true" />
+                    <element signature="e#1833#1842#0" expanded="true" />
+                    <element signature="e#2318#2319#0" expanded="true" />
+                    <element signature="e#2345#2346#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -104,8 +106,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/tests/FeedTests.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="35" column="93" selection-start-line="35" selection-start-column="93" selection-end-line="35" selection-end-column="93" />
+                <state relative-caret-position="169">
+                  <caret line="54" column="39" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
                 </state>
               </provider>
             </entry>
@@ -175,7 +177,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585690054108" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585692941615" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -202,20 +204,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FeedTests.testTimelineFeature">
-    <configuration name="FeedTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="IntegralKata" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FeedTests" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.FeedTests.testFollowing">
     <configuration name="FeedTests.testBasicFeed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IntegralKata" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FeedTests" />
       <option name="METHOD_NAME" value="testBasicFeed" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FeedTests.testFollowing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IntegralKata" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FeedTests" />
+      <option name="METHOD_NAME" value="testFollowing" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -253,11 +257,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FeedTests.testFollowing" />
         <item itemvalue="JUnit.FeedTests.testTimelineFeature" />
         <item itemvalue="JUnit.FeedTests.testPublishingFeature" />
         <item itemvalue="JUnit.FeedTests.testBasicFeed" />
         <item itemvalue="JUnit.ProfileTests.testFollowing" />
-        <item itemvalue="JUnit.FeedTests" />
       </list>
     </recent_temporary>
   </component>
@@ -275,35 +279,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FeedTests_testBasicFeed - 2020.03.31 at 16h 51m 38s.xml">
+    <history-entry file="FeedTests_testBasicFeed - 2020.03.31 at 17h 53m 45s.xml">
       <configuration name="FeedTests.testBasicFeed" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProfileTests_testFollowing - 2020.03.31 at 17h 08m 13s.xml">
-      <configuration name="ProfileTests.testFollowing" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FeedTests_testPublishingFeature - 2020.03.31 at 17h 19m 26s.xml">
+    <history-entry file="FeedTests_testPublishingFeature - 2020.03.31 at 17h 53m 48s.xml">
       <configuration name="FeedTests.testPublishingFeature" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FeedTests_testBasicFeed - 2020.03.31 at 17h 19m 59s.xml">
-      <configuration name="FeedTests.testBasicFeed" configurationId="JUnit" />
+    <history-entry file="FeedTests_testTimelineFeature - 2020.03.31 at 17h 53m 54s.xml">
+      <configuration name="FeedTests.testTimelineFeature" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FeedTests_testPublishingFeature - 2020.03.31 at 17h 20m 07s.xml">
+    <history-entry file="FeedTests_testPublishingFeature - 2020.03.31 at 17h 57m 43s.xml">
       <configuration name="FeedTests.testPublishingFeature" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FeedTests_testBasicFeed - 2020.03.31 at 17h 20m 41s.xml">
-      <configuration name="FeedTests.testBasicFeed" configurationId="JUnit" />
+    <history-entry file="FeedTests_testTimelineFeature - 2020.03.31 at 17h 57m 49s.xml">
+      <configuration name="FeedTests.testTimelineFeature" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FeedTests_testPublishingFeature - 2020.03.31 at 17h 20m 44s.xml">
+    <history-entry file="FeedTests_testPublishingFeature - 2020.03.31 at 17h 58m 19s.xml">
       <configuration name="FeedTests.testPublishingFeature" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FeedTests_testPublishingFeature - 2020.03.31 at 17h 20m 57s.xml">
-      <configuration name="FeedTests.testPublishingFeature" configurationId="JUnit" />
+    <history-entry file="FeedTests_testTimelineFeature - 2020.03.31 at 17h 58m 23s.xml">
+      <configuration name="FeedTests.testTimelineFeature" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FeedTests_testPublishingFeature - 2020.03.31 at 17h 21m 45s.xml">
-      <configuration name="FeedTests.testPublishingFeature" configurationId="JUnit" />
+    <history-entry file="FeedTests_testTimelineFeature - 2020.03.31 at 18h 01m 01s.xml">
+      <configuration name="FeedTests.testTimelineFeature" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FeedTests_testPublishingFeature - 2020.03.31 at 17h 21m 56s.xml">
-      <configuration name="FeedTests.testPublishingFeature" configurationId="JUnit" />
+    <history-entry file="FeedTests_testTimelineFeature - 2020.03.31 at 18h 01m 29s.xml">
+      <configuration name="FeedTests.testTimelineFeature" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FeedTests_testTimelineFeature - 2020.03.31 at 18h 02m 08s.xml">
+      <configuration name="FeedTests.testTimelineFeature" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -319,11 +323,11 @@
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" order="2" visible="true" weight="0.32978722" />
+      <window_info anchor="bottom" id="Messages" order="2" weight="0.32978722" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.2890071" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.2890071" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -398,20 +402,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Feed.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="57" column="40" lean-forward="true" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
+        <state relative-caret-position="212">
+          <caret line="70" column="30" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1742#1743#0" expanded="true" />
-            <element signature="e#1771#1772#0" expanded="true" />
+            <element signature="e#1833#1842#0" expanded="true" />
+            <element signature="e#2318#2319#0" expanded="true" />
+            <element signature="e#2345#2346#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/FeedTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="35" column="93" selection-start-line="35" selection-start-column="93" selection-end-line="35" selection-end-column="93" />
+        <state relative-caret-position="169">
+          <caret line="54" column="39" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
         </state>
       </provider>
     </entry>

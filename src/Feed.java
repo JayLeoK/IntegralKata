@@ -1,18 +1,15 @@
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.HashSet;
+import java.util.*;
 
 public class Feed {
-    private HashMap<String, HashSet<Integer>> handleToIndex;
+    private HashMap<String, ArrayList<Integer>> handleToIndexList;
     private ArrayList<Post> posts;
     private HashMap<String, Profile> handleToProfile;
     private Date date;
 
     public Feed(String currTime){
-        handleToIndex = new HashMap<String, HashSet<Integer>>();
+        handleToIndexList = new HashMap<String, ArrayList<Integer>>();
         posts = new ArrayList<Post>();
         handleToProfile = new HashMap<String, Profile>();
         date = stringToDate(currTime);
@@ -52,10 +49,38 @@ public class Feed {
     public void makePost(String handle, String body, String time){
         Post post = new Post(handle, body, time);
         posts.add(post);
+        if (handleToIndexList.get(handle)==null){
+            ArrayList<Integer> indexList = new ArrayList<Integer>();
+            handleToIndexList.put(handle,indexList);
+        }
+        handleToIndexList.get(handle).add(posts.size()-1);
     }
 
     public String viewTimeline(String handle1, String handle2){
-        return formatPost(posts.get(0));
+        ArrayList<Integer> indexList = handleToIndexList.get(handle2);
+        String output = "";
+        for (int i = indexList.size()-1;i>=0;i--){
+            output += formatPost(posts.get(i));
+            if(i>0){
+                output += "\n";
+            }
+        }
+        return output;
+    }
+
+    public String viewWall(String handle){
+        ArrayList indices = new ArrayList<Integer>();
+        Profile prof = handleToProfile.get(handle)
+        for
+        ArrayList<Integer> indexList = handleToIndexList.get();
+        String output = "";
+        for (int i = indexList.size()-1;i>=0;i--){
+            output += formatPost(posts.get(i));
+            if(i>0){
+                output += "\n";
+            }
+        }
+        return output;
     }
 
     private String formatPost(Post post){
