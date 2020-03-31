@@ -9,4 +9,11 @@ class ProfileTests {
     void testBasicProfile() throws Exception {
         assertEquals(Alice.getHandle(),"@Alice");
     }
+
+    @Test
+    void testMakePost() throws Exception {
+        Alice.makePost("I love the weather today");
+        assertEquals(Alice.numPosts(),1);
+        assertEquals(Alice.getLastPost(), "I love the weather today");
+    }
 }

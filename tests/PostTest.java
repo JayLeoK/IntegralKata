@@ -12,9 +12,5 @@ class PostTest {
         assertEquals(testPost.getBody(), "Test");
     }
 
-    @Test
-    void testAlicePost() throws Exception {
-        Alice.makePost("I love the weather today");
-        assertEquals(Alice.getLastPost(), "I love the weather today");
-    }
+
 }
