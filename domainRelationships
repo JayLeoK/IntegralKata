@@ -10,12 +10,15 @@ Profile
 Post
 - String handle ("alice123")
 - String body ("I love the weather today.")
-- Timestamp
+- String Timestamp
 
 Feed
 - HashSet of Profiles
 - ArrayList of Posts (ordered by timestamp)
 - HashMap of handles to ArrayList of indices,
-    each corresponding with posts
+    each index corresponding with posts
 
 TEST: Publishing, Timeline, and Following
+
+Note: Adapted code for timestamp from
+https://stackoverflow.com/questions/18915075/java-convert-string-to-timestamp
